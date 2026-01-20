@@ -234,6 +234,8 @@ ul {
 	font-weight: 700;
 	color: var(--accent);
 	gap: 0.35rem;
+	transition: color 0.2s, text-decoration 0.2s;
+	cursor: pointer;
 }
 .card-link::after {
 	content: '↗';
@@ -241,7 +243,7 @@ ul {
 }
 .card-link:hover,
 .card-link:focus-visible {
-	color: #1fb5aa;
+	color: var(--accent-strong);
 	text-decoration: underline;
 }
 
