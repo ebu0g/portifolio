@@ -1,12 +1,12 @@
 :root {
-	--bg: #050505;
-	--card: #0f0f0f;
-	--text: #f7f7f7;
-	--muted: #c6c6c6;
-	--accent: #0f766e;
-	--accent-strong: #0d5f59;
-	--border: #1d1d1d;
-	--shadow: 0 18px 50px rgba(0, 0, 0, 0.45);
+	--bg: #111111;
+	--card: #181818;
+	--text: #f3f7ff;
+	--muted: #bdbdbd;
+	--accent: #55d1c2;
+	--accent-strong: #3baea4;
+	--border: #232323;
+	--shadow: 0 18px 50px rgba(20, 20, 20, 0.45);
 }
 
 * {
@@ -155,11 +155,19 @@ h1 {
 }
 
 .card {
-	background: var(--card);
+	background: linear-gradient(150deg, #181818 60%, #23232b 100%);
 	border: 1px solid var(--border);
 	border-radius: 16px;
 	padding: 1.25rem;
 	box-shadow: var(--shadow);
+	transition: transform 0.18s ease, border-color 0.2s ease, box-shadow 0.25s ease, background 0.25s;
+}
+
+.card:hover, .card:focus-within {
+	background: linear-gradient(150deg, #23232b 40%, #181818 100%);
+	transform: translateY(-4px) scale(1.025);
+	border-color: var(--accent);
+	box-shadow: 0 18px 44px rgba(85, 209, 194, 0.13);
 }
 
 .card-label {
@@ -219,6 +227,24 @@ ul {
 	gap: 1rem;
 }
 
+.card-link {
+	display: inline-flex;
+	align-items: center;
+	margin-top: 0.85rem;
+	font-weight: 700;
+	color: var(--accent);
+	gap: 0.35rem;
+}
+.card-link::after {
+	content: '↗';
+	font-size: 0.95rem;
+}
+.card-link:hover,
+.card-link:focus-visible {
+	color: #1fb5aa;
+	text-decoration: underline;
+}
+
 .tags, .chips {
 	display: flex;
 	flex-wrap: wrap;
@@ -229,11 +255,11 @@ ul {
 .tags span, .chips span {
 	padding: 0.35rem 0.75rem;
 	border-radius: 999px;
-	background: #161616;
-	color: #f4f4f4;
+	background: #1c2b45;
+	color: #f6fbff;
 	font-weight: 600;
 	font-size: 0.9rem;
-	border: 1px solid #252525;
+	border: 1px solid #243652;
 }
 
 .contact-grid {
