@@ -1,7 +1,7 @@
 // Initialize EmailJS with your own keys from the EmailJS dashboard.
-const emailPublicKey = "YOUR_EMAILJS_PUBLIC_KEY";
-const emailServiceId = "YOUR_EMAILJS_SERVICE_ID";
-const emailTemplateId = "YOUR_EMAILJS_TEMPLATE_ID";
+const emailPublicKey = "eHNVGWC_LAEHtBuRD";
+const emailServiceId = "service_nnl6ckk";
+const emailTemplateId = "template_t6jzg1n";
 const fallbackEmail = "gebawak@gmail.com"; // mailto fallback target
 
 const emailConfigured = ![
